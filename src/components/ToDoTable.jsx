@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ToDoTable = ({ task }) => {
-    console.log( task);
+const ToDoTable = ({ task, index }) => {
+    console.log( task, index);
 
     return (       
            
                 <tr>
-                    <td>{task.id}</td>
+                    <td>{index +1}</td>
                     <td>{task.text}</td>
                     <td>{task.isCompleted?"Done":"Stil in Progress"}</td>                    
                 </tr>  
